@@ -1,0 +1,86 @@
+/* styles for all pages*/
+@use 'variables';
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: variables.$active-color;
+  }
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+
+  &__accent {
+    color: variables.$active-color;
+  }
+}
+
+%page-button {
+  background-color: variables.$active-color;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  color: variables.$main-color;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+}
+
+.section {
+  padding: 94px 0;
+
+  &-header {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    text-align: center;
+    color: variables.$header-color;
+  }
+}
+
+@mixin social-icon($color, $fill) {
+  .social-link {
+    &__icon {
+      fill: $fill;
+      transition: variables.$transition-fill;
+    }
+    &__container {
+      width: 44px;
+      height: 44px;
+      padding: 12px;
+      background-color: $color;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        border-radius: 50%;
+        background-color: variables.$active-color;
+      }
+      &:hover .social-link__icon,
+      &:focus .social-link__icon {
+        fill: variables.$main-color;
+      }
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  @include social-icon(variables.$main-color, variables.$icon-color);
+}

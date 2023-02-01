@@ -1,0 +1,32 @@
+/*First section of the main page*/
+@use '../utils/common';
+@use '../utils/variables';
+
+.banner {
+  background-color: variables.$background-color-dark;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid variables.$logo-top-color;
+  box-shadow: variables.$box-shadow-darker;
+  &__container {
+    @extend .container;
+  }
+  &__button {
+    @extend %page-button;
+    margin: 30px 500px 106px;
+    padding: 10px 41px;
+  }
+  &__title {
+    color: variables.$main-color;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    padding-top: 106px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

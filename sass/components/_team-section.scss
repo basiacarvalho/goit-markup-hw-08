@@ -1,0 +1,35 @@
+/*Fourth section of the main page - Our Team*/
+@use '../utils/variables';
+
+.employees {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  .employee {
+    background-color: variables.$main-color;
+    box-shadow: variables.$box-shadow-lighter;
+    border-radius: 0 0 4px 4px;
+    &__social-links {
+      margin: 15px 32px;
+      padding-bottom: 12px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 1.19;
+      text-align: center;
+    }
+    &__title {
+      color: variables.$header-color;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.19;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.section--team {
+  background-color: variables.$background-color-light;
+}

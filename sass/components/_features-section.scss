@@ -1,0 +1,29 @@
+/*Second section of the main page - LOREM IPSUM*/
+@use '../utils/variables';
+
+.features {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  .feature {
+    width: 270px;
+    &__description {
+      line-height: 1.72;
+    }
+    &__icon-container {
+      background-color: variables.$background-color-light;
+      border-radius: 4px;
+      width: 270px;
+      height: 120px;
+      padding: 25px 100px;
+    }
+    &__title {
+      color: variables.$header-color;
+      font-size: 14px;
+      line-height: 1.14;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+  }
+}

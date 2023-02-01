@@ -1,0 +1,32 @@
+/*Fifth section of the main page - Our Clients*/
+@use '../utils/common';
+@use '../utils/variables';
+
+.clients {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  .client {
+    &__container {
+      width: 170px;
+      height: 92px;
+      border: 1px solid variables.$icon-color;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 16px 32px;
+      transition: variables.$transition-fill, variables.$transition-border-color;
+      &:hover,
+      &:focus {
+        border-color: variables.$active-color;
+      }
+      &:hover .client__icon,
+      &:focus .client__icon {
+        fill: variables.$active-color;
+      }
+    }
+    &__icon {
+      fill: variables.$icon-color;
+      transition: variables.$transition-fill, variables.$transition-border-color;
+    }
+  }
+}
