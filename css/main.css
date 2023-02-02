@@ -471,6 +471,11 @@ ul {
   border: none;
   cursor: pointer;
 }
+.close-button__button:hover .close-button__icon, .close-button__button:focus .close-button__icon {
+  fill: #2196f3;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .is-hidden,
 .is-hidden .modal {
