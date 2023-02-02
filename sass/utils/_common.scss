@@ -3,7 +3,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 450px;
   min-width: 320px;
 }
 
@@ -18,18 +18,12 @@
 .logo {
   font-family: 'Raleway';
   font-size: 24px;
+  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
-
+  letter-spacing: 0.03em;
   &__accent {
     color: variables.$active-color;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .logo {
-    font-size: 26px;
-    line-height: 1.19;
   }
 }
 
@@ -47,8 +41,7 @@
 }
 
 .section {
-  padding: 94px 0;
-
+  padding: 60px 0;
   &-header {
     font-size: 36px;
     line-height: 1.17;
@@ -91,4 +84,23 @@
   display: flex;
   justify-content: space-between;
   @include social-icon(variables.$main-color, variables.$icon-color);
+}
+
+@media screen and (min-width: 481px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+  }
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .section {
+    padding: 94px 0;
+  }
 }

@@ -29,7 +29,7 @@ ul {
 /* styles for all pages*/
 .container, .header__container, .footer-container, .banner__container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 450px;
   min-width: 320px;
 }
 
@@ -44,19 +44,15 @@ ul {
 .logo, .header-logo, .footer-logo {
   font-family: "Raleway";
   font-size: 24px;
+  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .logo__accent {
   color: #2196f3;
 }
 
-@media screen and (min-width: 769px) {
-  .logo, .header-logo, .footer-logo {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
 .order-form__button, .newsletter__button, .banner__button {
   background-color: #2196f3;
   border: none;
@@ -72,7 +68,7 @@ ul {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 .section-header {
   font-size: 36px;
@@ -114,6 +110,23 @@ ul {
   fill: #fff;
 }
 
+@media screen and (min-width: 481px) {
+  .container, .header__container, .footer-container, .banner__container {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container, .header__container, .footer-container, .banner__container {
+    max-width: 1200px;
+  }
+  .logo, .header-logo, .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .section {
+    padding: 94px 0;
+  }
+}
 /*First section of the main page*/
 .banner {
   background-color: #2f303a;
@@ -349,6 +362,7 @@ ul {
 }
 
 .header-contact {
+  font-size: 12px;
   line-height: 1.17;
 }
 .header-contact__icon {
@@ -393,7 +407,7 @@ ul {
 }
 .header-logo {
   color: #000;
-  margin: 26px 83px 26px 15px;
+  margin-top: 16px;
 }
 .header-nav {
   display: -webkit-box;
@@ -404,7 +418,7 @@ ul {
           justify-content: space-between;
   line-height: 1.14;
   margin-top: 32px;
-  width: 254px;
+  width: 282px;
 }
 .header-nav__link {
   color: #212121;
@@ -422,6 +436,10 @@ ul {
   }
 }
 @media screen and (min-width: 481px) {
+  .header-logo {
+    margin-right: 83px;
+    margin-top: 26px;
+  }
   .menu-toggle {
     display: none;
   }
@@ -434,6 +452,7 @@ ul {
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+    font-size: 14px;
     line-height: 1.14;
     margin: 32px 0;
   }
@@ -441,7 +460,11 @@ ul {
     margin-right: 10px;
   }
   .header-logo {
-    margin: 24px 93px 25px 0;
+    margin-right: 93px;
+    margin-top: 24px;
+  }
+  .header-nav {
+    width: 254px;
   }
 }
 /* Modal + Backdrop */

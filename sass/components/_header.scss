@@ -19,6 +19,7 @@
 .header {
   &-contact {
     @extend %header-menu;
+    font-size: 12px;
     line-height: 1.17;
     &__icon {
       fill: variables.$text-color;
@@ -52,7 +53,7 @@
   &-logo {
     @extend .logo;
     color: variables.$logo-top-color;
-    margin: 26px 83px 26px 15px;
+    margin-top: 16px;
   }
   &-nav {
     @extend %header-menu;
@@ -60,7 +61,7 @@
     justify-content: space-between;
     line-height: 1.14;
     margin-top: 32px;
-    width: 254px;
+    width: 282px;
     &__link {
       @extend .link;
       color: variables.$header-color;
@@ -79,6 +80,10 @@
 }
 
 @media screen and (min-width: 481px) {
+  .header-logo {
+    margin-right: 83px;
+    margin-top: 26px;
+  }
   .menu-toggle {
     display: none;
   }
@@ -88,6 +93,7 @@
   .header-contact {
     display: flex;
     column-gap: 30px;
+    font-size: 14px;
     line-height: 1.14;
     margin: 32px 0;
   }
@@ -95,6 +101,10 @@
     margin-right: 10px;
   }
   .header-logo {
-    margin: 24px 93px 25px 0;
+    margin-right: 93px;
+    margin-top: 24px;
+  }
+  .header-nav {
+    width: 254px;
   }
 }
