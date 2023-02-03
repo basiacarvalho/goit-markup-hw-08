@@ -49,11 +49,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px 15px;
   }
   &-logo {
     @extend .logo;
     color: variables.$logo-top-color;
-    margin-top: 16px;
   }
   &-nav {
     @extend %header-menu;
@@ -69,13 +69,8 @@
   }
   &-navigation {
     display: flex;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header-nav,
-  .header-contact {
-    display: none;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

@@ -23,17 +23,14 @@
   <body>
     <header class="header">
       <div class="header__container">
+        <a class="header-logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__open-button" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
         <nav class="header-navigation">
-          <a class="header-logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="" width="40" height="40">
-              <use href="./images/icons.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
           <ul class="header-nav">
             <li class="header-nav__item is-active">
               <a class="header-nav__link" href="#">Agencja</a>
@@ -41,7 +38,9 @@
             <li class="header-nav__item">
               <a class="header-nav__link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="header-nav__item"><a class="header-nav__link link" href="#">Kontakt</a></li>
+            <li class="header-nav__item">
+              <a class="header-nav__link link" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-contact">
@@ -473,6 +472,7 @@
         </div>
       </div>
     </footer>
+    <!--Modal + Backdrop-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="close-button">
@@ -551,6 +551,45 @@
           </div>
           <button class="order-form__button" type="submit">Wyślij</button>
         </form>
+      </div>
+    </div>
+    <!--Mobile modal-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__close-button" width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu">
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item mobile__is-active">
+            <a class="mobile-nav__link" href="#">Agencja</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav__item"><a class="header-nav__link link" href="#">Kontakt</a></li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__phone">
+            <a class="mobile-contacts__link" href="tel:+48111111111">+48 111 111 111</a>
+          </li>
+          <li class="mobile-contacts__mail">
+            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-socials__item"><a class="mobile-socials__link" href="#">Twitter</a></li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="#">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
