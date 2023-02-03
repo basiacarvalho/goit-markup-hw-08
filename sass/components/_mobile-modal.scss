@@ -1,6 +1,11 @@
 @use '../utils/common';
 @use '../utils/variables';
 
+%header-menu {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -10,12 +15,6 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: variables.$active-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
@@ -40,6 +39,24 @@
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+.mobile-nav * {
+  @extend %header-menu;
+  font-size: 40px;
+  line-height: 1.18;
+  color: variables.$header-color;
+}
+
+.mobile__is-active::after {
+  content: '';
+  color: variables.$active-color;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: variables.$active-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 480px) {
