@@ -40,16 +40,15 @@
     }
     &__item:first-child {
       margin-bottom: 10px;
-      margin-right: 15px;
     }
   }
   &__container {
     @extend .container;
     align-items: center;
     display: flex;
+    gap: 83px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 15px;
   }
   &-logo {
     @extend .logo;
@@ -71,14 +70,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
 @media screen and (min-width: 481px) {
-  .header-logo {
-    margin-right: 83px;
-    margin-top: 26px;
-  }
   .menu-toggle {
     display: none;
   }
@@ -87,19 +83,23 @@
 @media screen and (min-width: 769px) {
   .header-contact {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
     font-size: 14px;
     line-height: 1.14;
-    margin: 32px 0;
   }
   .header-contact__icon {
     margin-right: 10px;
   }
-  .header-logo {
-    margin-right: 93px;
-    margin-top: 24px;
+  .header-container {
+    gap: 93px;
   }
   .header-nav {
     width: 254px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    max-width: 282px;
   }
 }
