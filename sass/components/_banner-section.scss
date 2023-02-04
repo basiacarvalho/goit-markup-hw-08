@@ -27,10 +27,17 @@
   &__title {
     color: variables.$main-color;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 24px;
     letter-spacing: 0.06em;
-    line-height: 1.36;
+    line-height: 1.62;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .banner__title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

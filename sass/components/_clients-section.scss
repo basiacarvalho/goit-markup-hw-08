@@ -3,6 +3,7 @@
 @use '../utils/variables';
 
 .clients {
+  column-gap: 30px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;

@@ -2,9 +2,9 @@
 @use 'variables';
 
 .container {
-  margin: 0 auto;
   max-width: 450px;
   min-width: 320px;
+  margin: 0 15px;
 }
 
 .link {
@@ -41,6 +41,8 @@
 }
 
 .section {
+  display: flex;
+  justify-content: center;
   padding: 60px 0;
   &-header {
     font-size: 36px;
@@ -94,7 +96,7 @@
 
 @media screen and (min-width: 769px) {
   .container {
-    max-width: 1200px;
+    max-width: 1170px;
   }
   .logo {
     font-size: 26px;
