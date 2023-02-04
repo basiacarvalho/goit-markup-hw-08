@@ -2,9 +2,8 @@
 @use 'variables';
 
 .container {
-  max-width: 450px;
+  max-width: 1170px;
   min-width: 320px;
-  margin: 0 15px;
 }
 
 .link {
@@ -90,13 +89,13 @@
 
 @media screen and (min-width: 481px) {
   .container {
-    max-width: 738px;
+    width: 738px;
   }
 }
 
 @media screen and (min-width: 769px) {
   .container {
-    max-width: 1170px;
+    width: 1170px;
   }
   .logo {
     font-size: 26px;

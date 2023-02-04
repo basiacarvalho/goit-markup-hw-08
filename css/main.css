@@ -28,9 +28,8 @@ ul {
 
 /* styles for all pages*/
 .container, .header__container, .footer-container, .banner__container {
-  max-width: 450px;
+  max-width: 1170px;
   min-width: 320px;
-  margin: 0 15px;
 }
 
 .link, .header-contact__link, .header-nav__link {
@@ -118,12 +117,12 @@ ul {
 
 @media screen and (min-width: 481px) {
   .container, .header__container, .footer-container, .banner__container {
-    max-width: 738px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 769px) {
   .container, .header__container, .footer-container, .banner__container {
-    max-width: 1170px;
+    width: 1170px;
   }
   .logo, .header-logo, .footer-logo {
     font-size: 26px;
@@ -218,19 +217,8 @@ ul {
 }
 
 /*Second section of the main page - LOREM IPSUM*/
-.features {
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .features .feature {
-  width: 270px;
+  max-width: 450px;
 }
 .features .feature__description {
   line-height: 1.72;
@@ -238,9 +226,9 @@ ul {
 .features .feature__icon-container {
   background-color: #f5f4fa;
   border-radius: 4px;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
-  padding: 25px 100px;
+  padding: 25px 190px;
 }
 .features .feature__title {
   color: #212121;
@@ -251,6 +239,52 @@ ul {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 480px) {
+  .feature:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .features .feature {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+  .features .feature__icon-container {
+    padding: 25px 142px;
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .features {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features .feature {
+    max-width: 270px;
+  }
+  .features .feature__icon-container {
+    max-width: 270px;
+    padding: 25px 100px;
+  }
+}
 /*Footer*/
 .contacts {
   line-height: 1.71;

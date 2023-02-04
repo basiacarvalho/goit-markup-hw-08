@@ -2,20 +2,17 @@
 @use '../utils/variables';
 
 .features {
-  column-gap: 30px;
-  display: flex;
-  justify-content: space-between;
   .feature {
-    width: 270px;
+    max-width: 450px;
     &__description {
       line-height: 1.72;
     }
     &__icon-container {
       background-color: variables.$background-color-light;
       border-radius: 4px;
-      width: 270px;
+      max-width: 450px;
       height: 120px;
-      padding: 25px 100px;
+      padding: 25px 190px;
     }
     &__title {
       color: variables.$header-color;
@@ -24,6 +21,43 @@
       margin-bottom: 10px;
       margin-top: 30px;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    .feature {
+      flex-basis: calc((100% - 30px) / 2);
+      max-width: 354px;
+      &__icon-container {
+        padding: 25px 142px;
+        max-width: 354px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .features {
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    .feature {
+      max-width: 270px;
+      &__icon-container {
+        max-width: 270px;
+        padding: 25px 100px;
+      }
     }
   }
 }
