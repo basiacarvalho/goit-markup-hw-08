@@ -139,9 +139,23 @@ ul {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+.banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 106px 0;
+}
 .banner__button {
-  margin: 30px 500px 106px;
+  margin-top: 30px;
   padding: 10px 41px;
+  width: 200px;
 }
 .banner__title {
   color: #fff;
@@ -149,7 +163,6 @@ ul {
   font-size: 44px;
   letter-spacing: 0.06em;
   line-height: 1.36;
-  padding-top: 106px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -447,7 +460,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -455,7 +470,9 @@ ul {
     margin-right: 10px;
   }
   .header-container {
-    gap: 93px;
+    -webkit-column-gap: 93px;
+       -moz-column-gap: 93px;
+            column-gap: 93px;
   }
   .header-nav {
     width: 254px;

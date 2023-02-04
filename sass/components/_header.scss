@@ -83,7 +83,7 @@
 @media screen and (min-width: 769px) {
   .header-contact {
     display: flex;
-    gap: 30px;
+    column-gap: 30px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -91,7 +91,7 @@
     margin-right: 10px;
   }
   .header-container {
-    gap: 93px;
+    column-gap: 93px;
   }
   .header-nav {
     width: 254px;
