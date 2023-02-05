@@ -5,11 +5,12 @@
   background-color: variables.$main-color;
   box-shadow: variables.$box-shadow-lighter;
   border-radius: 0 0 4px 4px;
+  max-width: 450px;
   &__social-links {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-    margin: 16px 122px 24px 122px;
+    margin: 16px 0px 24px 0px;
   }
   &__subtitle {
     font-size: 16px;
@@ -31,12 +32,20 @@
   background-color: variables.$background-color-light;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .employee {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
 }
 
 @media screen and (min-width: 769px) {
   .employees {
-    column-gap: 30px;
     display: flex;
     justify-content: space-between;
   }

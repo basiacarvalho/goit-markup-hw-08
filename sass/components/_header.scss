@@ -18,10 +18,7 @@
 
 .header {
   display: flex;
-  justify-content: center;
-}
-
-.header {
+  justify-content: space-between;
   &-contact {
     @extend %header-menu;
     font-size: 12px;
@@ -51,7 +48,7 @@
     gap: 83px;
     flex-direction: row;
     justify-content: space-between;
-    width: 1170px;
+    width: 450px;
   }
   &-logo {
     @extend .logo;
@@ -107,5 +104,20 @@
   }
   .header-contact__link:first-child {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 481) {
+  .header__container {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    justify-content: center;
+  }
+  .header__container {
+    width: 1170px;
   }
 }
