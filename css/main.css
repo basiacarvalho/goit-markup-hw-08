@@ -1086,33 +1086,30 @@ ul {
   }
 }
 /*Fourth section of the main page - Our Team*/
-.employees {
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.employees .employee {
+.employee {
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
-.employees .employee__social-links {
-  margin: 15px 32px;
-  padding-bottom: 12px;
+.employee__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin: 16px 122px 24px 122px;
 }
-.employees .employee__subtitle {
+.employee__subtitle {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-.employees .employee__title {
+.employee__title {
   color: #212121;
   font-size: 16px;
   font-weight: 500;
@@ -1124,4 +1121,22 @@ ul {
 
 .section--team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 769px) {
+  .employees {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .employee__social-links {
+    margin: 15px 32px;
+    padding-bottom: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
