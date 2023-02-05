@@ -226,7 +226,6 @@ ul {
 .features .feature__icon-container {
   background-color: #f5f4fa;
   border-radius: 4px;
-  max-width: 450px;
   height: 120px;
   padding: 25px 190px;
 }
@@ -241,6 +240,19 @@ ul {
 
 @media screen and (max-width: 480px) {
   .feature:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .feature__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .feature:nth-child(-n+2) {
     margin-bottom: 30px;
   }
 }
@@ -262,7 +274,6 @@ ul {
   }
   .features .feature__icon-container {
     padding: 25px 142px;
-    max-width: 354px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -281,7 +292,6 @@ ul {
     max-width: 270px;
   }
   .features .feature__icon-container {
-    max-width: 270px;
     padding: 25px 100px;
   }
 }
@@ -547,6 +557,9 @@ ul {
 @media screen and (max-width: 768px) {
   .header-nav {
     max-width: 282px;
+  }
+  .header-contact__link:first-child {
+    margin-bottom: 10px;
   }
 }
 .mobile-socials__link, .mobile-nav__link, .mobile-contacts__link-phone, .mobile-contacts__link-mail {
@@ -1067,6 +1080,11 @@ ul {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .only-desktop {
+    display: none;
+  }
+}
 /*Fourth section of the main page - Our Team*/
 .employees {
   -webkit-column-gap: 30px;

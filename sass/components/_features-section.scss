@@ -10,7 +10,6 @@
     &__icon-container {
       background-color: variables.$background-color-light;
       border-radius: 4px;
-      max-width: 450px;
       height: 120px;
       padding: 25px 190px;
     }
@@ -29,6 +28,16 @@
   .feature:not(:last-child) {
     margin-bottom: 30px;
   }
+  .feature__title {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .feature:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -41,7 +50,6 @@
       max-width: 354px;
       &__icon-container {
         padding: 25px 142px;
-        max-width: 354px;
       }
     }
   }
@@ -55,7 +63,6 @@
     .feature {
       max-width: 270px;
       &__icon-container {
-        max-width: 270px;
         padding: 25px 100px;
       }
     }
