@@ -88,46 +88,52 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .footer-container {
-    height: 343px;
-    width: 768px;
-  }
-  .footer-container__tablet {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0 89px 60px 76px;
-    height: 127px;
-    width: 603px;
-  }
-  .footer-section:nth-child(2) {
-    margin-top: 5px;
+  .footer {
+    &-container {
+      height: 343px;
+      width: 768px;
+    }
+    &-container__tablet {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 0 89px 60px 76px;
+      height: 127px;
+      width: 603px;
+    }
+    &-section:nth-child(2) {
+      margin-top: 5px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .footer {
-    padding: 60px 0;
-  }
-  .footer-logo {
-    display: block;
-    text-align: center;
-  }
-  .footer-title {
-    text-align: center;
-  }
   .contacts__contact-list {
     text-align: center;
   }
-  .newsletter__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .footer {
+    padding: 60px 0;
+    &-logo {
+      display: block;
+      text-align: center;
+    }
+    &-title {
+      text-align: center;
+    }
   }
 
-  .newsletter__button {
-    margin-top: 20px;
+  .newsletter {
+    &__button {
+      margin-top: 20px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
   .social-links--footer {
     margin: auto;
   }
@@ -140,30 +146,30 @@
   .footer {
     display: flex;
     justify-content: center;
-  }
-  .footer-container {
-    display: flex;
-    align-items: center;
-    height: 252px;
-    justify-content: space-between;
-    width: 1170px;
-  }
-  .footer-container__tablet {
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-  }
-  .footer-section:nth-child(2) {
-    margin-top: 12px;
-  }
-  .newsletter__form {
-    display: flex;
-  }
-  .newsletter__input {
-    margin-right: 12px;
+    &-container {
+      display: flex;
+      align-items: center;
+      height: 252px;
+      justify-content: space-between;
+      width: 1170px;
+    }
+    &-container__tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
+    &-section:nth-child(2) {
+      margin-top: 12px;
+    }
   }
 
-  .newsletter__input {
-    width: 358px;
+  .newsletter {
+    &__form {
+      display: flex;
+    }
+    &__input {
+      margin-right: 12px;
+      width: 358px;
+    }
   }
 }

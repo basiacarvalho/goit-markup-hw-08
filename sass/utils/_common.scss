@@ -109,10 +109,10 @@
   }
   .section {
     padding: 94px 0;
-  }
-  .section-header {
-    font-size: 36px;
-    line-height: 1.17;
-    padding-bottom: 50px;
+    &-header {
+      font-size: 36px;
+      line-height: 1.17;
+      padding-bottom: 50px;
+    }
   }
 }

@@ -37,6 +37,15 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    background-size: 768px 400px;
+    &__container {
+      padding: 118px 0;
+    }
+  }
+}
+
 @media screen and (min-width: 769px) {
   .banner {
     background-size: contain;
@@ -45,16 +54,6 @@
       font-size: 44px;
       line-height: 1.36;
     }
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .banner {
-    background-size: contain;
-    background-size: 768px 400px;
-  }
-  .banner__container {
-    padding: 118px 0;
   }
 }
 
