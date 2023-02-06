@@ -18,19 +18,11 @@
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-}
-
-.footer {
   background-color: variables.$background-color-dark;
   &-container {
     @extend .container;
-    display: flex;
-    align-items: center;
-    height: 252px;
-    justify-content: space-between;
-    width: 1170px;
+    height: 603px;
+    width: 480px;
   }
   &-logo {
     @extend .logo;
@@ -51,9 +43,6 @@
     display: flex;
     align-items: center;
     padding: 10px 28px 10px 42px;
-  }
-  &__form {
-    display: flex;
   }
   &__icon-button {
     fill: variables.$main-color;
@@ -87,6 +76,7 @@
 .social-links--footer {
   @extend .social-links;
   @include common.social-icon(rgba(255, 255, 255, 0.1), variables.$main-color);
+  width: 206px;
   & .social-link:not(:last-child) {
     margin-right: 10px;
   }
