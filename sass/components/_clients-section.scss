@@ -32,7 +32,7 @@
   .clients {
     display: flex;
     flex-wrap: wrap-reverse;
-    column-gap: 30px;
+    gap: 30px;
     .client__container {
       flex-basis: calc((100% - 30px) / 2);
     }

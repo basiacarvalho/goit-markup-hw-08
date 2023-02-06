@@ -271,9 +271,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
+    gap: 30px;
   }
   .clients .client__container {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
