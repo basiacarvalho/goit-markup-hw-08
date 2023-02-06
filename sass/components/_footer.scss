@@ -99,22 +99,21 @@
     justify-content: center;
   }
   .footer-title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
   }
   .contacts__contact-list {
+    text-align: center;
+  }
+  .newsletter__form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .newsletter__button {
+    margin-top: 20px;
   }
   .social-links--footer {
-    display: flex;
+    margin: auto;
   }
 }
 
