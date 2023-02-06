@@ -1085,12 +1085,14 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 34px;
-  row-gap: 30px;
+  gap: 30px;
 }
 .projects .project {
+  -ms-flex-preferred-size: calc((100% - 30px) / 3);
+      flex-basis: calc((100% - 30px) / 3);
   background-color: #fff;
+  max-width: 370px;
   cursor: pointer;
-  margin-right: 45px;
 }
 .projects .project__box {
   border: 1px solid #eee;

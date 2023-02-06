@@ -39,11 +39,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
-  row-gap: 30px;
+  gap: 30px;
   .project {
+    flex-basis: calc((100% - 30px) / 3);
     background-color: variables.$main-color;
+    max-width: 370px;
     cursor: pointer;
-    margin-right: 45px;
     &__box {
       border: 1px solid #eee;
       border-top: none;
