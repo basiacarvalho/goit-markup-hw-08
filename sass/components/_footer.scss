@@ -57,7 +57,6 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    margin-right: 12px;
     padding: 15px 0 15px 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,6 +85,12 @@
   .footer {
     padding: 60px 0;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .footer-section {
     margin-bottom: 60px;
   }
@@ -93,11 +98,23 @@
     display: flex;
     justify-content: center;
   }
+  .footer-title {
+    display: flex;
+    justify-content: center;
+  }
   .contacts__contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .social-links--footer {
+    display: flex;
   }
 }
 

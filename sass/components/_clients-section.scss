@@ -33,8 +33,12 @@
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 30px;
-    .client__container {
-      flex-basis: calc((100% - 30px) / 2);
+    .client {
+      &__container {
+        flex-basis: calc((100% - 30px) / 2);
+        padding: 16px 52px;
+        width: 210px;
+      }
     }
   }
 }

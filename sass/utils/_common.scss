@@ -87,6 +87,12 @@
   @include social-icon(variables.$main-color, variables.$icon-color);
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 481px) {
   .container {
     width: 738px;

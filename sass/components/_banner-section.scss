@@ -37,13 +37,6 @@
   }
 }
 
-@media and (max-width: 480px) {
-  .banner__container {
-    width: 365px;
-    height: 164px;
-  }
-}
-
 @media screen and (min-width: 769px) {
   .banner {
     background-size: contain;
