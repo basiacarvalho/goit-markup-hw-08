@@ -137,6 +137,32 @@
   .contacts__contact:not(:last-child) {
     margin-bottom: 9px;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-container {
+    display: flex;
+    align-items: center;
+    height: 252px;
+    justify-content: space-between;
+    width: 1170px;
+  }
+  .footer-container__tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+  .footer-section:nth-child(2) {
+    margin-top: 12px;
+  }
+  .newsletter__form {
+    display: flex;
+  }
+  .newsletter__input {
+    margin-right: 12px;
+  }
+
   .newsletter__input {
     width: 358px;
   }
