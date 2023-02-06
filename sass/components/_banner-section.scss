@@ -29,11 +29,18 @@
   &__title {
     color: variables.$main-color;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 26px;
     letter-spacing: 0.06em;
     line-height: 1.62;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@media and (max-width: 480px) {
+  .banner__container {
+    width: 365px;
+    height: 164px;
   }
 }
 
