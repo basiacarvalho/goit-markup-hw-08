@@ -33,10 +33,16 @@
   display: none;
   & * {
     display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   &.is-open,
   * {
     display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
     transform: translateX(0);
   }
   & .menu-toggle {
