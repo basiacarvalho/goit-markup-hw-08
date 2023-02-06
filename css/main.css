@@ -198,6 +198,15 @@ ul {
     line-height: 1.36;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    background-size: contain;
+    background-size: 768px 400px;
+  }
+  .banner__container {
+    padding: 118px 0;
+  }
+}
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/banner-480@2x.jpg");
@@ -503,12 +512,37 @@ ul {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-section {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-container {
+    height: 343px;
+    width: 768px;
+  }
+  .footer-container__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 89px 60px 76px;
+    height: 127px;
+    width: 603px;
+  }
+  .footer-section:nth-child(2) {
+    margin-top: 5px;
+  }
+}
 @media screen and (max-width: 768px) {
   .footer {
     padding: 60px 0;
-  }
-  .footer-section {
-    margin-bottom: 60px;
   }
   .footer-logo {
     display: block;
@@ -689,6 +723,9 @@ ul {
   }
 }
 @media screen and (max-width: 768px) {
+  .header-contact {
+    margin-right: 15px;
+  }
   .header-logo {
     margin-left: 15px;
   }
@@ -705,6 +742,7 @@ ul {
 }
 
 .menu-toggle {
+  margin-right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;

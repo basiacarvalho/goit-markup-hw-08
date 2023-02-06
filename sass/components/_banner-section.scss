@@ -48,6 +48,16 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner {
+    background-size: contain;
+    background-size: 768px 400px;
+  }
+  .banner__container {
+    padding: 118px 0;
+  }
+}
+
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
