@@ -21,7 +21,7 @@
   background-color: variables.$background-color-dark;
   &-container {
     @extend .container;
-    height: 603px;
+    height: 483px;
     width: 480px;
   }
   &-logo {
@@ -79,6 +79,25 @@
   width: 206px;
   & .social-link:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer-section {
+    margin-bottom: 60px;
+  }
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .contacts__contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
