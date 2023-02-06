@@ -812,8 +812,10 @@ ul {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   z-index: 999;
+  display: none;
 }
 .menu-container.is-open {
+  display: block;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
