@@ -34,17 +34,13 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
   gap: 30px;
   .project {
-    flex-basis: calc((100% - 30px) / 3);
     background-color: variables.$main-color;
-    max-width: 370px;
     cursor: pointer;
     &__box {
       border: 1px solid #eee;
       border-top: none;
-      width: 370px;
     }
     &__img-box {
       position: relative;
@@ -59,7 +55,6 @@
       transform: translateY(100%);
       transition: transform 250ms ease;
       background-color: variables.$active-color;
-      padding: 49px 45px 49px 24px;
     }
     &__overlay-text {
       color: variables.$main-color;
@@ -69,8 +64,8 @@
     &__subtitle {
       font-size: 16px;
       line-height: 1.88;
-      margin-top: 0;
       padding: 0 24px 20px;
+      margin-top: 0;
     }
     &__title {
       color: variables.$header-color;
@@ -88,9 +83,6 @@
     &:hover .project__overlay {
       transform: translateY(0);
     }
-    &:nth-child(3n + 3) {
-      margin-right: 0px;
-    }
   }
 }
 
@@ -101,6 +93,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+  .projects {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .project {
+    width: 450px;
+  }
+  .project:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .project__box {
+    width: 450px;
+  }
+  .project__overlay {
+    padding: 77px 24px;
   }
 }
 
@@ -132,10 +140,39 @@
     justify-content: center;
     margin-bottom: 16px;
   }
+  .projects {
+    margin-top: 34px;
+  }
 }
 
 @media screen and (min-width: 769px) {
   .filter__button {
     padding: 6px 22px;
+  }
+  .project {
+    flex-basis: calc((100% - 30px) / 3);
+    max-width: 370px;
+  }
+  .project__box {
+    width: 370px;
+  }
+  .project__overlay {
+    padding: 49px 45px 49px 24px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .project {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+  .project__box {
+    width: 354px;
+  }
+  .project:first-child .project__subtitle {
+    padding: 0 24px 56px;
+  }
+  .project__overlay {
+    padding: 49px 24px;
   }
 }

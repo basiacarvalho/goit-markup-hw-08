@@ -1188,20 +1188,15 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 34px;
   gap: 30px;
 }
 .projects .project {
-  -ms-flex-preferred-size: calc((100% - 30px) / 3);
-      flex-basis: calc((100% - 30px) / 3);
   background-color: #fff;
-  max-width: 370px;
   cursor: pointer;
 }
 .projects .project__box {
   border: 1px solid #eee;
   border-top: none;
-  width: 370px;
 }
 .projects .project__img-box {
   position: relative;
@@ -1220,7 +1215,6 @@ ul {
   transition: transform 250ms ease;
   transition: transform 250ms ease, -webkit-transform 250ms ease;
   background-color: #2196f3;
-  padding: 49px 45px 49px 24px;
 }
 .projects .project__overlay-text {
   color: #fff;
@@ -1230,8 +1224,8 @@ ul {
 .projects .project__subtitle {
   font-size: 16px;
   line-height: 1.88;
-  margin-top: 0;
   padding: 0 24px 20px;
+  margin-top: 0;
 }
 .projects .project__title {
   color: #212121;
@@ -1249,9 +1243,6 @@ ul {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.projects .project:nth-child(3n+3) {
-  margin-right: 0px;
-}
 
 @media screen and (max-width: 480px) {
   .filters {
@@ -1265,6 +1256,25 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .project {
+    width: 450px;
+  }
+  .project:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .project__box {
+    width: 450px;
+  }
+  .project__overlay {
+    padding: 77px 24px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1294,10 +1304,40 @@ ul {
             justify-content: center;
     margin-bottom: 16px;
   }
+  .projects {
+    margin-top: 34px;
+  }
 }
 @media screen and (min-width: 769px) {
   .filter__button {
     padding: 6px 22px;
+  }
+  .project {
+    -ms-flex-preferred-size: calc((100% - 30px) / 3);
+        flex-basis: calc((100% - 30px) / 3);
+    max-width: 370px;
+  }
+  .project__box {
+    width: 370px;
+  }
+  .project__overlay {
+    padding: 49px 45px 49px 24px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .project {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+  .project__box {
+    width: 354px;
+  }
+  .project:first-child .project__subtitle {
+    padding: 0 24px 56px;
+  }
+  .project__overlay {
+    padding: 49px 24px;
   }
 }
 /*Third section of the main page - What do we work with*/
