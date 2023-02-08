@@ -3,8 +3,13 @@
 @use '../utils/variables';
 
 .clients {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 30px;
   .client {
     &__container {
+      flex-basis: calc((100% - 6.67%) / 2);
       width: 210px;
       height: 92px;
       border: 1px solid variables.$icon-color;
@@ -28,29 +33,11 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 30px;
-    .client {
-      &__container {
-        flex-basis: calc((100% - 30px) / 2);
-        padding: 16px 52px;
-        width: 210px;
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 481px) {
   .clients {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 30px;
     .client {
       &__container {
-        flex-basis: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 8.13%) / 3);
         padding: 16px 60px;
         width: 226px;
       }
@@ -60,7 +47,6 @@
 
 @media screen and (min-width: 769px) {
   .clients {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     .client {
