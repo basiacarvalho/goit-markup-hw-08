@@ -59,19 +59,19 @@
   @include mixins.social-icon(variables.$main-color, variables.$icon-color);
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .container {
     width: 450px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 481px) {
   .container {
     width: 738px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
   .container {
     width: 1170px;
   }
