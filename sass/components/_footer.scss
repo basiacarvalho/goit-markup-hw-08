@@ -1,6 +1,7 @@
 /*Footer*/
 @use '../utils/common';
 @use '../utils/variables';
+@use '../utils/mixins';
 
 .contacts {
   line-height: 1.71;
@@ -74,7 +75,7 @@
 
 .social-links--footer {
   @extend .social-links;
-  @include common.social-icon(rgba(255, 255, 255, 0.1), variables.$main-color);
+  @include mixins.social-icon(rgba(255, 255, 255, 0.1), variables.$main-color);
   width: 206px;
   & .social-link:not(:last-child) {
     margin-right: 10px;

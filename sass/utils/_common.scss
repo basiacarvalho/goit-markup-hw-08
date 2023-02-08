@@ -1,5 +1,6 @@
 /* styles for all pages*/
 @use 'variables';
+@use 'mixins';
 
 .container {
   max-width: 1170px;
@@ -52,39 +53,10 @@
   }
 }
 
-@mixin social-icon($color, $fill) {
-  .social-link {
-    &__icon {
-      fill: $fill;
-      transition: variables.$transition-fill;
-    }
-    &__container {
-      width: 44px;
-      height: 44px;
-      padding: 12px;
-      background-color: $color;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        border-radius: 50%;
-        background-color: variables.$active-color;
-      }
-      &:hover .social-link__icon,
-      &:focus .social-link__icon {
-        fill: variables.$main-color;
-      }
-    }
-  }
-}
-
 .social-links {
   display: flex;
   justify-content: space-between;
-  @include social-icon(variables.$main-color, variables.$icon-color);
+  @include mixins.social-icon(variables.$main-color, variables.$icon-color);
 }
 
 @media screen and (max-width: 480px) {
