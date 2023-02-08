@@ -56,6 +56,7 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
+    height: 50px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     padding: 15px 0 15px 16px;
@@ -165,6 +166,7 @@
   }
 
   .newsletter {
+    margin-bottom: 33px;
     &__form {
       display: flex;
     }
