@@ -5,7 +5,6 @@
   background-color: variables.$main-color;
   box-shadow: variables.$box-shadow-lighter;
   border-radius: 0 0 4px 4px;
-  max-width: 450px;
   &__social-links {
     display: flex;
     justify-content: center;
@@ -50,13 +49,12 @@
     flex-wrap: wrap;
     gap: 30px;
     .employee {
-      flex-basis: calc((100% - 30px) / 2);
-      max-width: 354px;
+      flex-basis: calc((100% - 3.9%) / 2);
     }
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .employees {
     display: flex;
     justify-content: space-between;
@@ -64,5 +62,12 @@
       margin: 16px 32px 18px 32px;
       padding-bottom: 12px;
     }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .employee__social-links {
+    display: inline-flex;
+    margin-left: 57px;
   }
 }
