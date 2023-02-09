@@ -698,7 +698,11 @@ ul {
           justify-content: space-between;
   line-height: 1.14;
   margin-top: 32px;
-  width: 282px;
+  gap: 30px;
+}
+.header-nav__item {
+  -ms-flex-preferred-size: 26.24%;
+      flex-basis: 26.24%;
 }
 .header-nav__link {
   color: #212121;
@@ -719,16 +723,6 @@ ul {
   .header__container {
     width: 100%;
     margin: auto;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 625px) {
-  .header-nav {
-    width: 179px;
-  }
-}
-@media screen and (min-width: 626) and (max-width: 767px) {
-  .header-nav {
-    width: 252px;
   }
 }
 @media screen and (min-width: 768px) {
