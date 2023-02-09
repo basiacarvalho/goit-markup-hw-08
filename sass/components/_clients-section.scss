@@ -33,10 +33,17 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 738px;
+  }
   .clients {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
     .client {
       &__container {
+        display: flex;
         flex-basis: calc((100% - 8.13%) / 3);
         padding: 16px 60px;
         width: 226px;
@@ -48,7 +55,7 @@
 @media screen and (min-width: 769px) {
   .clients {
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     .client {
       &__container {
         padding: 16px 32px;

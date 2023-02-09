@@ -22,7 +22,6 @@
   background-color: variables.$background-color-dark;
   &-container {
     @extend .container;
-    height: 483px;
   }
   &-logo {
     @extend .logo;
