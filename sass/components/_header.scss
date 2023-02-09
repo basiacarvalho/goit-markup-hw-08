@@ -51,6 +51,7 @@
   &-logo {
     @extend .logo;
     color: variables.$logo-top-color;
+    margin-left: 15px;
   }
   &-nav {
     @extend %header-menu;
@@ -71,16 +72,20 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
   .header__container {
     width: 768px;
+    margin: auto;
+  }
+  .header__nav {
+    width: 282px;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .header {
     justify-content: center;
     &-contact {
@@ -113,8 +118,7 @@
     width: 480px;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .header {
     &-contact {
       margin-right: 15px;
@@ -125,8 +129,19 @@
     &-logo {
       margin-left: 15px;
     }
-    &-nav {
-      max-width: 282px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &-contact {
+      margin-right: 15px;
+    }
+    &-contact__item:first-child {
+      margin-bottom: 10px;
+    }
+    &-logo {
+      margin-left: 15px;
     }
   }
 }
