@@ -1459,14 +1459,20 @@ ul {
     padding-bottom: 24px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .employees {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: auto;
+       -moz-column-gap: auto;
+            column-gap: auto;
+    row-gap: 30px;
   }
   .employees .employee {
     -ms-flex-preferred-size: 48.05%;
@@ -1481,6 +1487,7 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 30px;
   }
   .employees .employee__social-links {
     margin: 16px 32px 18px 32px;
