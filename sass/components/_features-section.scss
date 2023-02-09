@@ -2,15 +2,18 @@
 @use '../utils/variables';
 
 .feature {
-  max-width: 450px;
   &__description {
     line-height: 1.72;
+  }
+  &__icon {
+    display: block;
+    margin: auto;
   }
   &__icon-container {
     background-color: variables.$background-color-light;
     border-radius: 4px;
     height: 120px;
-    padding: 25px 190px;
+    padding: 25px 0;
   }
   &__title {
     color: variables.$header-color;
@@ -19,6 +22,29 @@
     margin-bottom: 10px;
     margin-top: 30px;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .feature {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    .feature {
+      width: 270px;
+    }
   }
 }
 
@@ -34,14 +60,14 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     .feature {
-      flex-basis: calc((100% - 30px) / 2);
-      max-width: 354px;
+      flex-basis: calc((100% - 8.47%) / 2);
       &__icon-container {
         padding: 25px 142px;
       }
@@ -49,16 +75,15 @@
   }
 }
 
-@media screen and (min-width: 769px) {
-  .features {
-    column-gap: 30px;
-    display: flex;
-    justify-content: space-between;
-    .feature {
-      max-width: 270px;
-      &__icon-container {
-        padding: 25px 100px;
-      }
-    }
-  }
-}
+// @media screen and (min-width: 769px) {
+//   .features {
+//     column-gap: 30px;
+//     display: flex;
+//     justify-content: space-between;
+//     .feature {
+//       &__icon-container {
+//         padding: 25px 100px;
+//       }
+//     }
+//   }
+// }

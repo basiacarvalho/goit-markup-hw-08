@@ -310,17 +310,18 @@ ul {
   }
 }
 /*Second section of the main page - LOREM IPSUM*/
-.feature {
-  max-width: 450px;
-}
 .feature__description {
   line-height: 1.72;
+}
+.feature__icon {
+  display: block;
+  margin: auto;
 }
 .feature__icon-container {
   background-color: #f5f4fa;
   border-radius: 4px;
   height: 120px;
-  padding: 25px 190px;
+  padding: 25px 0;
 }
 .feature__title {
   color: #212121;
@@ -331,6 +332,32 @@ ul {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) {
+  .feature {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features .feature {
+    width: 270px;
+  }
+}
 @media screen and (max-width: 480px) {
   .feature:not(:last-child) {
     margin-bottom: 30px;
@@ -344,41 +371,24 @@ ul {
     display: flex;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
   }
   .features .feature {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-    max-width: 354px;
+    -ms-flex-preferred-size: 45.765%;
+        flex-basis: 45.765%;
   }
   .features .feature__icon-container {
     padding: 25px 142px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .features {
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .features .feature {
-    max-width: 270px;
-  }
-  .features .feature__icon-container {
-    padding: 25px 100px;
   }
 }
 /*Footer*/
@@ -1366,7 +1376,7 @@ ul {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .tasks-section {
     display: none;
   }
@@ -1414,6 +1424,11 @@ ul {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .employee {
+    width: 354px;
+  }
+}
 @media screen and (max-width: 480px) {
   .employee:not(:last-child) {
     margin-bottom: 30px;
