@@ -959,8 +959,8 @@ ul {
   transition: visibility 950ms ease-in-out, opacity 950ms ease-in-out, -webkit-transform 950ms ease-in-out;
   transition: visibility 950ms ease-in-out, opacity 950ms ease-in-out, transform 950ms ease-in-out;
   transition: visibility 950ms ease-in-out, opacity 950ms ease-in-out, transform 950ms ease-in-out, -webkit-transform 950ms ease-in-out;
-  -webkit-transform: translateY(50%) scale(1);
-          transform: translateY(50%) scale(1);
+  -webkit-transform: translateY(5%) scale(1);
+          transform: translateY(5%) scale(1);
   opacity: 1;
   visibility: visible;
 }
@@ -1159,6 +1159,18 @@ ul {
   .order-form__statement-container {
     margin-left: 15px;
     margin-right: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    -webkit-transform: translateY(25%) scale(1);
+            transform: translateY(25%) scale(1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    -webkit-transform: translateY(30%) scale(1);
+            transform: translateY(30%) scale(1);
   }
 }
 /* Portfolio page */
