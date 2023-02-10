@@ -21,7 +21,7 @@
 
 .menu-container {
   background-color: variables.$main-color;
-  padding: 6.03% 0% 12.06% 8.33%;
+  padding: 48px 0 48px 40px;
   position: fixed;
   top: 0;
   left: 0;
@@ -126,9 +126,6 @@
 }
 
 @media screen and (min-width: 481px) {
-  // .menu-container {
-  //   padding: 48px 0 48px 40px;
-  // }
   .menu-toggle {
     display: none;
   }
