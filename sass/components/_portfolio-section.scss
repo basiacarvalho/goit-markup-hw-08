@@ -93,6 +93,16 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .project__img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .projects .project__overlay {
+    padding: 20px 14px 20px 14px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .filters {
     margin-bottom: 40px;
@@ -146,6 +156,9 @@
   .filter__button {
     padding: 6px 22px;
   }
+  .projects .project__overlay {
+    padding: 49px 45px 49px 24px;
+  }
   .project {
     flex-basis: calc((100% - 30px) / 3);
     max-width: 370px;
@@ -161,6 +174,9 @@
 @media screen and (min-width: 481px) and (max-width: 1199px) {
   .projects {
     justify-content: flex-start;
+  }
+  .projects .project__overlay {
+    padding: 49px 24px 49px 24px;
   }
   .project {
     flex-basis: calc((100% - 30px) / 2);

@@ -1306,6 +1306,15 @@ ul {
           transform: translateY(0);
 }
 
+@media screen and (max-width: 450px) {
+  .project__img {
+    max-width: 100%;
+    margin: auto;
+  }
+  .projects .project__overlay {
+    padding: 20px 14px 20px 14px;
+  }
+}
 @media screen and (min-width: 480px) {
   .filters {
     margin-bottom: 40px;
@@ -1358,6 +1367,9 @@ ul {
   .filter__button {
     padding: 6px 22px;
   }
+  .projects .project__overlay {
+    padding: 49px 45px 49px 24px;
+  }
   .project {
     -ms-flex-preferred-size: calc((100% - 30px) / 3);
         flex-basis: calc((100% - 30px) / 3);
@@ -1375,6 +1387,9 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .projects .project__overlay {
+    padding: 49px 24px 49px 24px;
   }
   .project {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
