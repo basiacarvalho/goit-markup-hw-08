@@ -115,18 +115,17 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
   .contacts__contact-list {
     text-align: center;
   }
 
   .footer {
     padding: 60px 0;
+    &-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
     &-logo {
       display: block;
       text-align: center;

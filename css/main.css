@@ -195,11 +195,15 @@ ul {
 @media screen and (min-width: 768px) {
   .banner {
     background-size: 768px 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/banner-768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-768.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .banner {
     background-size: 1600px 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/banner-1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-1600.jpg");
     padding: 94px 0;
   }
   .banner__container {
@@ -208,18 +212,6 @@ ul {
   .banner__title {
     font-size: 44px;
     line-height: 1.36;
-  }
-}
-@media screen and (min-width: 768px) {
-  .banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/banner-768.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-768.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .banner {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/banner-1600.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner-1600.jpg");
   }
 }
 /*Fifth section of the main page - Our Clients*/
@@ -520,6 +512,12 @@ ul {
   }
 }
 @media screen and (max-width: 1199px) {
+  .contacts__contact-list {
+    text-align: center;
+  }
+  .footer {
+    padding: 60px 0;
+  }
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,12 +527,6 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-  }
-  .contacts__contact-list {
-    text-align: center;
-  }
-  .footer {
-    padding: 60px 0;
   }
   .footer-logo {
     display: block;
@@ -1368,18 +1360,18 @@ ul {
   .projects .project__overlay {
     padding: 49px 24px 49px 24px;
   }
-  .project {
+  .projects .project {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
     max-width: 354px;
   }
-  .project__box {
+  .projects .project__box {
     width: 354px;
   }
-  .project:first-child .project__subtitle {
+  .projects .project:first-child .projects .project__subtitle {
     padding: 0 24px 56px;
   }
-  .project__overlay {
+  .projects .project__overlay {
     padding: 49px 24px;
   }
 }
