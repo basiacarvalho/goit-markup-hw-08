@@ -98,9 +98,6 @@
     margin-bottom: 40px;
     justify-content: flex-start;
   }
-  .projects {
-    flex-direction: column;
-  }
   .project {
     width: 450px;
   }
@@ -112,7 +109,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .filters {
     .filter {
       &:nth-of-type(1) .filter__button {
@@ -134,9 +131,6 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-}
-
 @media screen and (min-width: 481px) {
   .filters {
     display: flex;
@@ -148,7 +142,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .filter__button {
     padding: 6px 22px;
   }
@@ -164,7 +158,10 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .projects {
+    justify-content: flex-start;
+  }
   .project {
     flex-basis: calc((100% - 30px) / 2);
     max-width: 354px;
@@ -177,5 +174,11 @@
   }
   .project__overlay {
     padding: 49px 24px;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .projects {
+    justify-content: center;
   }
 }

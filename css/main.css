@@ -1313,12 +1313,6 @@ ul {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .projects {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .project {
     width: 450px;
   }
@@ -1329,7 +1323,7 @@ ul {
     padding: 77px 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .filters .filter:nth-of-type(1) .filter__button {
     padding: 6px 13px;
   }
@@ -1360,7 +1354,7 @@ ul {
     margin-top: 34px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .filter__button {
     padding: 6px 22px;
   }
@@ -1376,7 +1370,12 @@ ul {
     padding: 49px 45px 49px 24px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  .projects {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .project {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -1390,6 +1389,13 @@ ul {
   }
   .project__overlay {
     padding: 49px 24px;
+  }
+}
+@media screen and (max-width: 737px) {
+  .projects {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*Third section of the main page - What do we work with*/
