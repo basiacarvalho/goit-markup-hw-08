@@ -610,6 +610,10 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.is-active .header-nav__link {
+  color: #2196f3;
+}
+
 .is-active::after {
   content: "";
   height: 4px;
@@ -682,7 +686,7 @@ ul {
   margin-top: 32px;
   gap: 30px;
 }
-.header-nav__item {
+.header-nav__item * {
   -ms-flex-preferred-size: 26.24%;
       flex-basis: 26.24%;
 }
@@ -1155,8 +1159,8 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    -webkit-transform: translateY(25%) scale(1);
-            transform: translateY(25%) scale(1);
+    -webkit-transform: translateY(50%) scale(1);
+            transform: translateY(50%) scale(1);
   }
 }
 @media screen and (min-width: 1200px) {
